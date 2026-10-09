@@ -225,7 +225,7 @@ impl Transcript {
 /// uses [`rekey_with_witness_bytes()`][rekey_with_witness_bytes] to rekey the
 /// transcript with the prover's secrets, before finally calling
 /// [`finalize()`][finalize].  This rekeys the transcript with the
-/// output of an external [`rand_core::RngCore`] instance and returns
+/// output of an external [`rand_core::CryptoRng`] instance and returns
 /// a finalized [`TranscriptRng`].
 ///
 /// These methods are intended to be chained, passing from a borrowed
