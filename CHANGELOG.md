@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.0.0
+
+* Update `rand_core` to `0.10`. Because traits from `rand_core` are part of the
+  public API, this is a breaking change: `TranscriptRngBuilder::finalize`
+  accepts RNGs implementing the `rand_core` 0.10 traits, and `TranscriptRng`
+  implements the `rand_core` 0.10 traits.
+
 ## 3.0.0
 
 * Update `rand_core` to `0.6`.  Because traits from `rand_core` are part of the
